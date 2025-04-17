@@ -1,0 +1,9 @@
+tensorflow
+keras
+numpy
+librosa
+pandas
+scikit-learn
+flask
+pytest
+requests

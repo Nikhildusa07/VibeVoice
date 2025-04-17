@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VIBE VOICE</title>
+
+  <link rel="stylesheet" href="ui.css">
+</head>
+<body>
+  
+  <div class="container">
+    <!-- <h1>Emotion Suggestions App</h1> -->
+     <H1>VIBE VOICE</H1>
+     <H3>Emotion Detector & Mood Enhancement</H3>
+    <p style="padding-top: 0;padding-top: 5px;">Find out how you’re feeling and get personalized activities to enhance your mood</p>
+    <p style="padding-top: 10px;padding-top: 0px;">---upload or record now---</p>
+    
+    <!-- File Upload Section -->
+    <div class="upload-section">
+      <input type="file" id="audioFile" accept="audio/*">
+      <button id="uploadBtn">Predict Emotion (File Upload)</button>
+    </div>
+    
+    <!-- Recording Section -->
+    <div class="record-section">
+      <!-- Container for the recording icon -->
+      <div class="record-icon-container">
+        <!-- The recording icon. It will be animated when recording starts. -->
+        <img id="recordIcon" src="https://static.thenounproject.com/png/1614606-200.png" alt="Record Icon">
+      </div>
+      <!-- Status text to show recording progress -->
+      <p id="recordingStatus">Not Recording</p>
+      <!-- Buttons for recording controls -->
+      <div class="record-buttons">
+        <button id="recordBtn">Start Recording</button>
+        <button id="stopBtn" disabled>Stop Recording</button>
+        <audio id="recordedAudio" controls style="display:none;margin-left: 120px;margin-top:10px;margin-bottom: 10px; border: 1px solid black; border-radius: 30px;"></audio>
+        <button id="predictRecordedBtn" style="display:none;">Predict Emotion (Recording)</button>
+      </div>
+    </div>
+    
+    <!-- Result Section -->
+    <div id="result" style="margin-top: 0px;">
+      <!-- <h1>VIBE VOICE</h1> -->
+      <H2>Emotion Detector & Mood Enhancement</H2>
+      <!-- <h2>Result:</h2> -->
+      <h1><h1 id="emotion" style="padding: 10px;font-size: large; color: #e0e30c;margin-bottom: 0;" ></h1></h1>
+     
+      
+        <img src="image5.jpg" alt="Random Mood Image" height="180" width="350" style="border-radius: 50px;">
+    
+
+    <P>I have Some Suggestions For Your Mood Enhancement </P>
+      <ul id="suggestions" style="padding-top: 20px;"></ul>
+    </div>
+  </div>
+  <div id="overlay"></div>
+  <script src="ui.js"></script>
+  
+
+</body>
+</html>
