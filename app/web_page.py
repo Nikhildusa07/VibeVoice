@@ -41,7 +41,7 @@ app = Flask(__name__, static_folder=ui_dir, static_url_path="")
 
 @app.route("/")
 def index():
-    return send_from_directory(app.static_folder, "ui.html")
+    return send_from_directory(app.static_folder, "index.html")
 
 @app.route("/predict", methods=["POST"])
 def predict():
