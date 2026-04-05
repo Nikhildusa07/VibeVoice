@@ -1,4 +1,6 @@
 🚀 VibeVoice
+
+
 AI-Powered Voice Generation & Processing App
 VibeVoice is a modern AI-based voice application that enables users to generate, process, and interact with speech using advanced Text-to-Speech (TTS) technology.
 
@@ -19,19 +21,6 @@ Frontend: HTML, CSS, JavaScript
 AI Models: Text-to-Speech (TTS)
 Libraries: PyTorch, Transformers, Speech Libraries
 
-📂 Project Structure:
-VibeVoice/
-│── app.py
-│── requirements.txt
-│── static/
-│ ├── css/
-│ ├── js/
-│ └── audio/
-│── templates/
-│ ├── index.html
-│── models/
-│── utils/
-│── README.md
 
 ⚙️ Installation:
 1. Clone the Repository
